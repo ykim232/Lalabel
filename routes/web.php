@@ -20,11 +20,17 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/auth/login', [MainController::class, 'login'])->name('admin.login');
 Route::controller(AuthController::class)
     -> group(function (){
-        Route::get('/', 'login')->name('login');
         Route::get('/login', 'login')->name('login');
         Route::get('/signUp', 'sign-Up')->name('signUp');
         Route::get('/forgotPassword', 'forgotPassword')->name('forgotPassword');
     });
+
+Route::controller(MainController::class)
+    ->group(function () {
+        Route::get('/', 'main')->name('guest.home');
+    });
+
+
 
 Route::controller(MainController::class)
     ->prefix('admin')

@@ -14,12 +14,43 @@
             <div class="row g-2 align-items-center">
                 <div class="col">
                     <div class="page-pretitle">Home</div>
-                    <h2 class="page-title">이아이넷 안내</h2>
+                    <h2 class="page-title">이아이넷 정책 / 안내서</h2>
                 </div>
  @endsection
 
 @section('body')
  @parent
+                    <div class="row row-deck row-cards">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card">
+{{--                            <div class="img-responsive card-img-top" style="background-image: url({{ asset('assets/img/topbarleft.gif') }})"></div>--}}
+{{--                                <img src="{{ asset('assets/img/topbarleft.gif') }}" alt="Einet" class="navbarleft">--}}
+
+                            <div class="card-header"><h3 class="card-title">사업자 변경</h3></div>
+                            <div class="card-body">
+                                <div class="text-secondary">
+                                    <div class="row align-items-center">
+                                        <div class="col mb-3">
+                                            <p>필요서류</p>
+                                            <ul>
+                                                <li>홈페이지 관리 인수인계 동의서</li>
+                                                <li>홈페이지 관리자 변경 신청서(인수자용)</li>
+                                                <li>관리비 이체서류 (CMS 신청서)</li> <br>
+                                                <li>사업자 등록증 사본</li>
+                                                <li>통장 사본</li>
+                                            </ul>
+
+                                            <a href="#" class="btn">
+                                                <span class="avatar" style="background-image: url(...)"></span> 경영관리팀: 안혜지 주임 (hjan@einet.co.kr)
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
 @endsection
 
  @section('scripts')

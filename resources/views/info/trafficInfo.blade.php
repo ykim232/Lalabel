@@ -23,13 +23,13 @@
                                         <div class="row align-items-center">
                                             <div class="col mb-3">
                                                 <label class="form-label">승용차교통 정보 설정</label>
-                                                <textarea class="form-control" name="site-name"></textarea>
+                                                <textarea class="form-control" id="tinymce-default" name="site-name"></textarea>
                                             </div>
                                         </div>
                                         <div class="row align-items-center">
                                             <div class="col mb-3">
                                                 <label class="form-label">대중교통 정보 설정</label>
-                                                <textarea class="form-control" name="site-name"></textarea>
+                                                <textarea class="form-control"  id="tinymce-default" name="site-name"></textarea>
                                             </div>
                                         </div>
                                         <div class="btn-list">

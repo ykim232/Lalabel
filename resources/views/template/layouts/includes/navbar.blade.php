@@ -10,6 +10,7 @@
                      class="navbar-brand-image">
             </a>
         </h1>
+ n
 
         {{-- Left navbar --}}
         <div class="collapse navbar-collapse" id="sidebar-menu">

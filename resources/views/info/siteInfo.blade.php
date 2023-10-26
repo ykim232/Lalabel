@@ -21,7 +21,6 @@
         @method('PATCH')
         <div class="row row-deck row-cards">
             <div class="col-md-12 col-lg-12">
-
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -81,7 +80,7 @@
                                         <h4>팬션 소개글</h4>
                                         <p><small>* 결제 계좌는 적어도 하나는 입력하셔야 합니다.</small></p>
 
-                                        <textarea class="form-control" name="desc-site"></textarea>
+                                        <textarea class="form-control" id="tinymce-default" name="desc-site"></textarea>
 
                                     </div>
 
@@ -94,39 +93,345 @@
                                     <div class="list-group-item mb-3">
                                         <h4>예약안내 문구</h4>
 
-                                        <textarea class="form-control" name="desc-site"></textarea>
+                                        <textarea class="form-control" id="tinymce-default" name="desc-site"></textarea>
 
                                     </div>
 
                                     <div class="list-group-item mb-3">
                                         <h4>이용 안내 문구</h4>
 
-                                        <textarea class="form-control" name="desc-site"></textarea>
+                                        <textarea class="form-control" id="tinymce-default" name="desc-site"></textarea>
 
                                     </div>
 
                                     <div class="list-group-item mb-3">
                                         <h4>환불 기준 문구</h4>
 
-                                        <textarea class="form-control" name="desc-site"></textarea>
+                                        <textarea class="form-control" id="tinymce-default" name="desc-site"></textarea>
 
                                     </div>
 
                                     <div class="list-group-item mb-3">
                                         <h4>기본 환불 수수료</h4>
-
-
-                                    </div>
-
-                                    <div class="btn-list">
-                                        <a href="#" class="btn btn-primary"> 수정하기 </a>
-                                        <a href="#" class="btn btn-danger"> 취소 </a>
+                                        <div class="table-responsive">
+                                            <table class="table table-vcenter">
+                                                <thead>
+                                                <tr>
+                                                    <td>이용당일</td>
+                                                    <td>이용 1일전</td>
+                                                    <td>이용 2일전</td>
+                                                    <td>이용 3일전</td>
+                                                    <td>이용 4일전</td>
+                                                    <td>이용 5일전</td>
+                                                    <td>이용 6일전</td>
+                                                    <td>이용 7일전</td>
+                                                    <td>이용 8일전</td>
+                                                    <td>이용 9일전</td>
+                                                    <td>이용 10일전</td>
+                                                </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>
+                                                        <select name="off_charge[]">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="off_charge[]" style="width:74px; padding:2px;">
+                                                            <option value='100'>100%</option>
+                                                            <option value='95'>95%</option>
+                                                            <option value='90'>90%</option>
+                                                            <option value='85'>85%</option>
+                                                            <option value='80'>80%</option>
+                                                            <option value='75'>75%</option>
+                                                            <option value='70'>70%</option>
+                                                            <option value='65'>65%</option>
+                                                            <option value='60'>60%</option>
+                                                            <option value='55'>55%</option>
+                                                            <option value='50'>50%</option>
+                                                            <option value='45'>45%</option>
+                                                            <option value='40'>40%</option>
+                                                            <option value='35'>35%</option>
+                                                            <option value='30'>30%</option>
+                                                            <option value='25'>25%</option>
+                                                            <option value='20'>20%</option>
+                                                            <option value='15'>15%</option>
+                                                            <option value='10'>10%</option>
+                                                            <option value='5'>5%</option>
+                                                            <option value='0'>0%</option>
+                                                            <option value=''>없음</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary"> 수정하기 </a>
+                    <a href="#" class="btn btn-danger"> 취소 </a>
+                </div>
+            </div>
+        </div>
 
     </form>
 

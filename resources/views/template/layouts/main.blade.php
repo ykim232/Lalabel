@@ -67,4 +67,34 @@
 <!-- Tabler Core -->
 <script src="{{ asset('assets/js/tabler.min.js') }}?{{ config('sites.asset_version') }}" defer></script>
 <script src="{{ asset('assets/js/demo.min.js') }}?{{ config('sites.asset_version') }}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/libs/tinymce/tinymce.min.js" defer></script>
+
+{{--For tinymce.init()--}}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let options = {
+            selector: '#tinymce-default',
+            height: 300,
+            menubar: false,
+            statusbar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat',
+            content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; }'
+        }
+        if (localStorage.getItem("tablerTheme") === 'dark') {
+            options.skin = 'oxide-dark';
+            options.content_css = 'dark';
+        }
+        tinyMCE.init(options);
+    })
+</script>
+
+
 </html>
