@@ -2,12 +2,6 @@
 
 @section('title', '고객 관리자 페이지')
 
-@section('sidebar')
-@endsection
-
-@section('header')
-@endsection
-
 @section('page-title')
     <div class="page-header d-print-none">
         <div class="container-xl">
@@ -16,814 +10,95 @@
                     <div class="page-pretitle">Home</div>
                     <h2 class="page-title">이아이넷 정책 / 안내서</h2>
                 </div>
- @endsection
+                @endsection
 
-@section('body')
- @parent
-                    <div class="row row-deck row-cards">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="card">
-{{--                            <div class="img-responsive card-img-top" style="background-image: url({{ asset('assets/img/topbarleft.gif') }})"></div>--}}
-{{--                                <img src="{{ asset('assets/img/topbarleft.gif') }}" alt="Einet" class="navbarleft">--}}
-
-                            <div class="card-header"><h3 class="card-title">사업자 변경</h3></div>
+                @section('body')
+                    @parent
+                    <div class="row">
+                        {{--                        사업자변경--}}
+                        <div class="col card">
+                            <div class="card-header">
+                                <h3 class="card-title">사업자 변경</h3>
+                            </div>
                             <div class="card-body">
                                 <div class="text-secondary">
-                                    <div class="row align-items-center">
-                                        <div class="col mb-3">
-                                            <p>필요서류</p>
-                                            <ul>
-                                                <li>홈페이지 관리 인수인계 동의서</li>
-                                                <li>홈페이지 관리자 변경 신청서(인수자용)</li>
-                                                <li>관리비 이체서류 (CMS 신청서)</li> <br>
-                                                <li>사업자 등록증 사본</li>
-                                                <li>통장 사본</li>
-                                            </ul>
+                                    <p>필요서류</p>
+                                    <ul>
+                                        <li>홈페이지 관리 인수인계 동의서</li>
+                                        <li>홈페이지 관리자 변경 신청서(인수자용)</li>
+                                        <li>관리비 이체서류 (CMS 신청서)</li>
+                                        <br>
+                                        <li>사업자 등록증 사본</li>
+                                        <li>통장 사본</li>
+                                    </ul>
 
-                                            <a href="#" class="btn">
-                                                <span class="avatar" style="background-image: url(...)"></span> 경영관리팀: 안혜지 주임 (hjan@einet.co.kr)
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="btn">
+                                        <span class="avatar" style="background-image: url(...)"></span> 경영관리팀: 안혜지
+                                        주임 (hjan@einet.co.kr)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {{--                        도메인 구매대행--}}
+                        <div class="col card">
+                            <div class="card-header">
+                                <h3 class="card-title">도메인 구매대행</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-secondary">
+                                    <p>관리업체: 가비아(https://www.gabia.com)</p>
+                                    <ul>
+                                        <li>이용기간 첫 1년 무료제공. 단, 소유권은 이아이넷이 갖게됩니다.</li>
+                                        <li>도메인은 기본으로 한글로 구입하며, 영문으로 추가 구입시 추가요금이 발생합니다.</li>
+                                        <p>ex) 이아이넷.com /  einet.com </p>
+                                        <li>보안 문제가 생긴다는 에러페이지가 나와요! </li>
+                                        <p>ssl(보안서버/https) 는 홈페이지 내에서 정보공유 중 보안을 돕습니다. 저희같은 경우, 예약시스템을 따로 사용하기때문에 정보를 보여주기만 하는 저희 홈페이지에는 http를 사용합니다.
+                                            간혹 시각적으로 보기 꺼려지신다는 분들에 한해 ssl을 설치하고 있습니다.
+                                            이때는 월 5,500원을 추가로 관리비 납부가 필요하게됩니다</p>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-            </div>
+                    <div class="row ">
+                        <div class="col card">
+                            <div class="card-header">
+                                <h3 class="card-title">CMS 신청서란?</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-secondary">
+                                    <ul>
+                                        <li>호스팅 서버 임대</li>
+                                        <li>간편 유지보수업무(월)</li>
+                                        <li>도메인 사용</li>
+                                    </ul>
+                                    <p>  등등 웹에서 발생되는 비용. 즉, 관리비 출금 신청서 입니다</p>
+                                    <p>초기 계약 진행 시 관리비용 : 55,000원(월) 안내 드리오니 참고 부탁드립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col card">
+                            <div class="card-header">
+                                <h3 class="card-title">팝업창 디자인 신청</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-secondary">
+                                    <p>일반 팝업(무료) 외에 디자인 팝업(유료) 제작을 요청하실 수 있습니다.</p>
+                                    <p>'꾸미기' > '유지보수 신청' (홈페이지수정 > 디자인 팝업 요청) </p>
 
-@endsection
+                                    <ul>
+                                        <li> 영업일 기준 약 1~2일 소요 </li>
+                                        <li> 팝업 디자인이 완료된 이후에는 텍스트 외에는 추가수정 불가</li>
+                                        <li>시안 여러개 제공해드리지 않습니다. 희망하시는 느낌을 미리 설명해 주세요</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
- @section('scripts')
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('chart-revenue-bg'), {
-                chart: {
-                    type: "area",
-                    fontFamily: 'inherit',
-                    height: 40.0,
-                    sparkline: {
-                        enabled: true
-                    },
-                    animations: {
-                        enabled: false
-                    },
-                },
-                dataLabels: {
-                    enabled: false,
-                },
-                fill: {
-                    opacity: .16,
-                    type: 'solid'
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                    curve: "smooth",
-                },
-                series: [{
-                    name: "Profits",
-                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
-                }],
-                tooltip: {
-                    theme: 'dark'
-                },
-                grid: {
-                    strokeDashArray: 4,
-                },
-                xaxis: {
-                    labels: {
-                        padding: 0,
-                    },
-                    tooltip: {
-                        enabled: false
-                    },
-                    axisBorder: {
-                        show: false,
-                    },
-                    type: 'datetime',
-                },
-                yaxis: {
-                    labels: {
-                        padding: 4
-                    },
-                },
-                labels: [
-                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
-                ],
-                colors: [tabler.getColor("primary")],
-                legend: {
-                    show: false,
-                },
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('chart-new-clients'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 40.0,
-                    sparkline: {
-                        enabled: true
-                    },
-                    animations: {
-                        enabled: false
-                    },
-                },
-                fill: {
-                    opacity: 1,
-                },
-                stroke: {
-                    width: [2, 1],
-                    dashArray: [0, 3],
-                    lineCap: "round",
-                    curve: "smooth",
-                },
-                series: [{
-                    name: "May",
-                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 4, 46, 39, 62, 51, 35, 41, 67]
-                },{
-                    name: "April",
-                    data: [93, 54, 51, 24, 35, 35, 31, 67, 19, 43, 28, 36, 62, 61, 27, 39, 35, 41, 27, 35, 51, 46, 62, 37, 44, 53, 41, 65, 39, 37]
-                }],
-                tooltip: {
-                    theme: 'dark'
-                },
-                grid: {
-                    strokeDashArray: 4,
-                },
-                xaxis: {
-                    labels: {
-                        padding: 0,
-                    },
-                    tooltip: {
-                        enabled: false
-                    },
-                    type: 'datetime',
-                },
-                yaxis: {
-                    labels: {
-                        padding: 4
-                    },
-                },
-                labels: [
-                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
-                ],
-                colors: [tabler.getColor("primary"), tabler.getColor("gray-600")],
-                legend: {
-                    show: false,
-                },
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('chart-active-users'), {
-                chart: {
-                    type: "bar",
-                    fontFamily: 'inherit',
-                    height: 40.0,
-                    sparkline: {
-                        enabled: true
-                    },
-                    animations: {
-                        enabled: false
-                    },
-                },
-                plotOptions: {
-                    bar: {
-                        columnWidth: '50%',
-                    }
-                },
-                dataLabels: {
-                    enabled: false,
-                },
-                fill: {
-                    opacity: 1,
-                },
-                series: [{
-                    name: "Profits",
-                    data: [37, 35, 44, 28, 36, 24, 65, 31, 37, 39, 62, 51, 35, 41, 35, 27, 93, 53, 61, 27, 54, 43, 19, 46, 39, 62, 51, 35, 41, 67]
-                }],
-                tooltip: {
-                    theme: 'dark'
-                },
-                grid: {
-                    strokeDashArray: 4,
-                },
-                xaxis: {
-                    labels: {
-                        padding: 0,
-                    },
-                    tooltip: {
-                        enabled: false
-                    },
-                    axisBorder: {
-                        show: false,
-                    },
-                    type: 'datetime',
-                },
-                yaxis: {
-                    labels: {
-                        padding: 4
-                    },
-                },
-                labels: [
-                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
-                ],
-                colors: [tabler.getColor("primary")],
-                legend: {
-                    show: false,
-                },
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('chart-mentions'), {
-                chart: {
-                    type: "bar",
-                    fontFamily: 'inherit',
-                    height: 240,
-                    parentHeightOffset: 0,
-                    toolbar: {
-                        show: false,
-                    },
-                    animations: {
-                        enabled: false
-                    },
-                    stacked: true,
-                },
-                plotOptions: {
-                    bar: {
-                        columnWidth: '50%',
-                    }
-                },
-                dataLabels: {
-                    enabled: false,
-                },
-                fill: {
-                    opacity: 1,
-                },
-                series: [{
-                    name: "Web",
-                    data: [1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 2, 12, 5, 8, 22, 6, 8, 6, 4, 1, 8, 24, 29, 51, 40, 47, 23, 26, 50, 26, 41, 22, 46, 47, 81, 46, 6]
-                },{
-                    name: "Social",
-                    data: [2, 5, 4, 3, 3, 1, 4, 7, 5, 1, 2, 5, 3, 2, 6, 7, 7, 1, 5, 5, 2, 12, 4, 6, 18, 3, 5, 2, 13, 15, 20, 47, 18, 15, 11, 10, 0]
-                },{
-                    name: "Other",
-                    data: [2, 9, 1, 7, 8, 3, 6, 5, 5, 4, 6, 4, 1, 9, 3, 6, 7, 5, 2, 8, 4, 9, 1, 2, 6, 7, 5, 1, 8, 3, 2, 3, 4, 9, 7, 1, 6]
-                }],
-                tooltip: {
-                    theme: 'dark'
-                },
-                grid: {
-                    padding: {
-                        top: -20,
-                        right: 0,
-                        left: -4,
-                        bottom: -4
-                    },
-                    strokeDashArray: 4,
-                    xaxis: {
-                        lines: {
-                            show: true
-                        }
-                    },
-                },
-                xaxis: {
-                    labels: {
-                        padding: 0,
-                    },
-                    tooltip: {
-                        enabled: false
-                    },
-                    axisBorder: {
-                        show: false,
-                    },
-                    type: 'datetime',
-                },
-                yaxis: {
-                    labels: {
-                        padding: 4
-                    },
-                },
-                labels: [
-                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19', '2020-07-20', '2020-07-21', '2020-07-22', '2020-07-23', '2020-07-24', '2020-07-25', '2020-07-26'
-                ],
-                colors: [tabler.getColor("primary"), tabler.getColor("primary", 0.8), tabler.getColor("green", 0.8)],
-                legend: {
-                    show: false,
-                },
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:on
-                            document.addEventListener("DOMContentLoaded", function () {
-                                const map = new jsVectorMap({
-                                    selector: '#map-world',
-                                    map: 'world',
-                                    backgroundColor: 'transparent',
-                                    regionStyle: {
-                                        initial: {
-                                            fill: tabler.getColor('body-bg'),
-                                            stroke: tabler.getColor('border-color'),
-                                            strokeWidth: 2,
-                                        }
-                                    },
-                                    zoomOnScroll: false,
-                                    zoomButtons: false,
-                                    // -------- Series --------
-                                    visualizeData: {
-                                        scale: [tabler.getColor('bg-surface'), tabler.getColor('primary')],
-                                        values: {
-                                            "AF": 16,
-                                            "AL": 11,
-                                            "DZ": 158,
-                                            "AO": 85,
-                                            "AG": 1,
-                                            "AR": 351,
-                                            "AM": 8,
-                                            "AU": 1219,
-                                            "AT": 366,
-                                            "AZ": 52,
-                                            "BS": 7,
-                                            "BH": 21,
-                                            "BD": 105,
-                                            "BB": 3,
-                                            "BY": 52,
-                                            "BE": 461,
-                                            "BZ": 1,
-                                            "BJ": 6,
-                                            "BT": 1,
-                                            "BO": 19,
-                                            "BA": 16,
-                                            "BW": 12,
-                                            "BR": 2023,
-                                            "BN": 11,
-                                            "BG": 44,
-                                            "BF": 8,
-                                            "BI": 1,
-                                            "KH": 11,
-                                            "CM": 21,
-                                            "CA": 1563,
-                                            "CV": 1,
-                                            "CF": 2,
-                                            "TD": 7,
-                                            "CL": 199,
-                                            "CN": 5745,
-                                            "CO": 283,
-                                            "KM": 0,
-                                            "CD": 12,
-                                            "CG": 11,
-                                            "CR": 35,
-                                            "CI": 22,
-                                            "HR": 59,
-                                            "CY": 22,
-                                            "CZ": 195,
-                                            "DK": 304,
-                                            "DJ": 1,
-                                            "DM": 0,
-                                            "DO": 50,
-                                            "EC": 61,
-                                            "EG": 216,
-                                            "SV": 21,
-                                            "GQ": 14,
-                                            "ER": 2,
-                                            "EE": 19,
-                                            "ET": 30,
-                                            "FJ": 3,
-                                            "FI": 231,
-                                            "FR": 2555,
-                                            "GA": 12,
-                                            "GM": 1,
-                                            "GE": 11,
-                                            "DE": 3305,
-                                            "GH": 18,
-                                            "GR": 305,
-                                            "GD": 0,
-                                            "GT": 40,
-                                            "GN": 4,
-                                            "GW": 0,
-                                            "GY": 2,
-                                            "HT": 6,
-                                            "HN": 15,
-                                            "HK": 226,
-                                            "HU": 132,
-                                            "IS": 12,
-                                            "IN": 1430,
-                                            "ID": 695,
-                                            "IR": 337,
-                                            "IQ": 84,
-                                            "IE": 204,
-                                            "IL": 201,
-                                            "IT": 2036,
-                                            "JM": 13,
-                                            "JP": 5390,
-                                            "JO": 27,
-                                            "KZ": 129,
-                                            "KE": 32,
-                                            "KI": 0,
-                                            "KR": 986,
-                                            "KW": 117,
-                                            "KG": 4,
-                                            "LA": 6,
-                                            "LV": 23,
-                                            "LB": 39,
-                                            "LS": 1,
-                                            "LR": 0,
-                                            "LY": 77,
-                                            "LT": 35,
-                                            "LU": 52,
-                                            "MK": 9,
-                                            "MG": 8,
-                                            "MW": 5,
-                                            "MY": 218,
-                                            "MV": 1,
-                                            "ML": 9,
-                                            "MT": 7,
-                                            "MR": 3,
-                                            "MU": 9,
-                                            "MX": 1004,
-                                            "MD": 5,
-                                            "MN": 5,
-                                            "ME": 3,
-                                            "MA": 91,
-                                            "MZ": 10,
-                                            "MM": 35,
-                                            "NA": 11,
-                                            "NP": 15,
-                                            "NL": 770,
-                                            "NZ": 138,
-                                            "NI": 6,
-                                            "NE": 5,
-                                            "NG": 206,
-                                            "NO": 413,
-                                            "OM": 53,
-                                            "PK": 174,
-                                            "PA": 27,
-                                            "PG": 8,
-                                            "PY": 17,
-                                            "PE": 153,
-                                            "PH": 189,
-                                            "PL": 438,
-                                            "PT": 223,
-                                            "QA": 126,
-                                            "RO": 158,
-                                            "RU": 1476,
-                                            "RW": 5,
-                                            "WS": 0,
-                                            "ST": 0,
-                                            "SA": 434,
-                                            "SN": 12,
-                                            "RS": 38,
-                                            "SC": 0,
-                                            "SL": 1,
-                                            "SG": 217,
-                                            "SK": 86,
-                                            "SI": 46,
-                                            "SB": 0,
-                                            "ZA": 354,
-                                            "ES": 1374,
-                                            "LK": 48,
-                                            "KN": 0,
-                                            "LC": 1,
-                                            "VC": 0,
-                                            "SD": 65,
-                                            "SR": 3,
-                                            "SZ": 3,
-                                            "SE": 444,
-                                            "CH": 522,
-                                            "SY": 59,
-                                            "TW": 426,
-                                            "TJ": 5,
-                                            "TZ": 22,
-                                            "TH": 312,
-                                            "TL": 0,
-                                            "TG": 3,
-                                            "TO": 0,
-                                            "TT": 21,
-                                            "TN": 43,
-                                            "TR": 729,
-                                            "TM": 0,
-                                            "UG": 17,
-                                            "UA": 136,
-                                            "AE": 239,
-                                            "GB": 2258,
-                                            "US": 4624,
-                                            "UY": 40,
-                                            "UZ": 37,
-                                            "VU": 0,
-                                            "VE": 285,
-                                            "VN": 101,
-                                            "YE": 30,
-                                            "ZM": 15,
-                                            "ZW": 5
-                                        },
-                                    },
-                                });
-                                window.addEventListener("resize", () => {
-                                    map.updateSize();
-                                });
-                            });
-                            // @formatter:off
-    </script>
-    <script>
-        // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-activity'), {
-                chart: {
-                    type: "radialBar",
-                    fontFamily: 'inherit',
-                    height: 40,
-                    width: 40,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                plotOptions: {
-                    radialBar: {
-                        hollow: {
-                            margin: 0,
-                            size: '75%'
-                        },
-                        track: {
-                            margin: 0
-                        },
-                        dataLabels: {
-                            show: false
-                        }
-                    }
-                },
-                colors: [tabler.getColor("blue")],
-                series: [35],
-            })).render();
-        });
-        // @formatter:on
-    </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('chart-development-activity'), {
-                chart: {
-                    type: "area",
-                    fontFamily: 'inherit',
-                    height: 192,
-                    sparkline: {
-                        enabled: true
-                    },
-                    animations: {
-                        enabled: false
-                    },
-                },
-                dataLabels: {
-                    enabled: false,
-                },
-                fill: {
-                    opacity: .16,
-                    type: 'solid'
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                    curve: "smooth",
-                },
-                series: [{
-                    name: "Purchases",
-                    data: [3, 5, 4, 6, 7, 5, 6, 8, 24, 7, 12, 5, 6, 3, 8, 4, 14, 30, 17, 19, 15, 14, 25, 32, 40, 55, 60, 48, 52, 70]
-                }],
-                tooltip: {
-                    theme: 'dark'
-                },
-                grid: {
-                    strokeDashArray: 4,
-                },
-                xaxis: {
-                    labels: {
-                        padding: 0,
-                    },
-                    tooltip: {
-                        enabled: false
-                    },
-                    axisBorder: {
-                        show: false,
-                    },
-                    type: 'datetime',
-                },
-                yaxis: {
-                    labels: {
-                        padding: 4
-                    },
-                },
-                labels: [
-                    '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09', '2020-07-10', '2020-07-11', '2020-07-12', '2020-07-13', '2020-07-14', '2020-07-15', '2020-07-16', '2020-07-17', '2020-07-18', '2020-07-19'
-                ],
-                colors: [tabler.getColor("primary")],
-                legend: {
-                    show: false,
-                },
-                point: {
-                    show: false
-                },
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-1'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [17, 24, 20, 10, 5, 1, 4, 18, 13]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-2'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [13, 11, 19, 22, 12, 7, 14, 3, 21]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-3'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [10, 13, 10, 4, 17, 3, 23, 22, 19]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-4'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [6, 15, 13, 13, 5, 7, 17, 20, 19]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-5'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [2, 11, 15, 14, 21, 20, 8, 23, 18, 14]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
-                        <script>
-                            // @formatter:off
-        document.addEventListener("DOMContentLoaded", function () {
-            window.ApexCharts && (new ApexCharts(document.getElementById('sparkline-bounce-rate-6'), {
-                chart: {
-                    type: "line",
-                    fontFamily: 'inherit',
-                    height: 24,
-                    animations: {
-                        enabled: false
-                    },
-                    sparkline: {
-                        enabled: true
-                    },
-                },
-                tooltip: {
-                    enabled: false,
-                },
-                stroke: {
-                    width: 2,
-                    lineCap: "round",
-                },
-                series: [{
-                    color: tabler.getColor("primary"),
-                    data: [22, 12, 7, 14, 3, 21, 8, 23, 18, 14]
-                }],
-            })).render();
-        });
-        // @formatter:on
-                        </script>
+                @endsection
+
+                @section('scripts')
+
 @endsection

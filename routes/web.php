@@ -47,8 +47,16 @@ Route::controller(MainController::class)
 
 Route::controller(MainController::class)
     ->group(function () {
-        Route::GET('/userInfo', 'userInfo')->name('info.userInfo');
-        Route::GET('/siteInfo', 'siteInfo')->name('info.siteInfo');
-        Route::GET('/trafficInfo', 'trafficInfo')->name('info.trafficInfo');
+        Route::GET('userInfo', 'userInfo')->name('info.userInfo');
+        Route::GET('siteInfo', 'siteInfo')->name('info.siteInfo');
+        Route::GET('trafficInfo', 'trafficInfo')->name('info.trafficInfo');
+        Route::GET('etcInfo', 'etcInfo')->name('info.etcInfo');
     });
 
+
+Route::controller(MainController::class)
+    ->group(function () {
+        Route::GET('maintenance', 'maintenance')->name('maintenance.maintenance');
+        Route::GET('filming', 'filming')->name('maintenance.filming');
+        Route::GET('request_list', 'request_list')->name('maintenance.request_list');
+    });

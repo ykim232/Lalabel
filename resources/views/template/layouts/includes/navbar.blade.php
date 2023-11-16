@@ -10,7 +10,6 @@
                      class="navbar-brand-image">
             </a>
         </h1>
- n
 
         {{-- Left navbar --}}
         <div class="collapse navbar-collapse" id="sidebar-menu">
@@ -106,19 +105,20 @@
                   </span>
                     </a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="info/userInfo">
+                        <a class="dropdown-item" href="userInfo">
                             회원정보
                         </a>
-                        <a class="dropdown-item" href="info/siteInfo">
+                        <a class="dropdown-item" href="siteInfo">
                             펜션정보
                         </a>
-                        <a class="dropdown-item" href="info/trafficInfo">
+                        <a class="dropdown-item" href="trafficInfo">
                             교통안내
                         </a>
-                        <a class="dropdown-item" href="info/cookie-banner.html">
-                            시설정보 수정
+                        <a class="dropdown-item" href="etcInfo">
+                            기타정보
                         </a>
                     </div>
+
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown"
@@ -137,13 +137,13 @@
                   </span>
                     </a>
                     <div class="dropdown-menu ">
-                        <a class="dropdown-item" href="./layout-horizontal.html">
+                        <a class="dropdown-item" href="maintenance">
                             유지보수 요청
                         </a>
-                        <a class="dropdown-item" href="./layout-boxed.html">
+                        <a class="dropdown-item" href="filming">
                             촬영요청 신청
                         </a>
-                        <a class="dropdown-item active" href="./layout-vertical.html">
+                        <a class="dropdown-item active" href="request_list">
                             요청기록
                         </a>
                     </div>

@@ -15,13 +15,21 @@ class MainController extends Controller
     {
         return view('info/userInfo');
     }
+    public function siteInfo()
+    {
+        return view('info/siteInfo');
+    }
     public function trafficInfo()
     {
         return view('info/trafficInfo');
     }
-    public function siteInfo()
+    public function etcInfo()
     {
-        return view('info/siteInfo');
+        return view('info/etcInfo');
+    }
+    public function maintenance()
+    {
+        return view('maintenance/maintenance');
     }
 }
 
